@@ -18,7 +18,17 @@
 from flask import flash
 import requests
 from lxml import etree
+"""
+安装新的模块
+uv add requests
 
+查看安装的库
+uv pip list
+
+导出requirements配置
+uv pip freeze > requirements.txt
+
+"""
 
 
 
