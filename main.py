@@ -30,6 +30,16 @@ uv pip freeze > requirements.txt
 
 """
 
+"""
+添加远程仓库地址，命名为 origin
+    git remote add origin git@github-personal:tomdingjf/uv_test.git
+将本地仓库与 GitHub 上的 uv_test 仓库关联
+    git branch -M main
+将当前分支重命名为 main
+    -M 表示强制重命名
+将本地 main 分支推送到远程 origin 仓库
+    git push -u origin main
+    -u 参数会建立本地分支与远程分支的跟踪关系，以后只需 git push 即可
 
-
+"""
 
