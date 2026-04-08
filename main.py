@@ -28,6 +28,9 @@ uv pip list
 导出requirements配置
 uv pip freeze > requirements.txt
 
+安装配置
+uv sync
+
 """
 
 """
