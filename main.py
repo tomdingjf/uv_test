@@ -19,6 +19,9 @@ from flask import flash
 import requests
 from lxml import etree
 """
+用uv开始新的项目
+uv init -p 项目名称
+
 安装新的模块
 直接用uv add模块，就可以创建虚拟环境，也能添加uv.lock
 uv add requests
