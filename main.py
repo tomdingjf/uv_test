@@ -20,6 +20,7 @@ import requests
 from lxml import etree
 """
 安装新的模块
+直接用uv add模块，就可以创建虚拟环境，也能添加uv.lock
 uv add requests
 
 查看安装的库
