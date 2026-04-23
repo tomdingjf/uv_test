@@ -19,8 +19,17 @@ from flask import flash
 import requests
 from lxml import etree
 """
+
 用uv开始新的项目
-uv init -p 项目名称
+uv init -p project_name
+3.12为python版本，此文件夹需要符合python规范，不能有空格
+uv init -p 3.12
+也可以先建文件夹，同理，文件夹也需要符合python规范
+uv init -p 3.12 --name my_project
+
+查看可用的python版本
+uv python list --only-downloads
+
 
 安装新的模块
 直接用uv add模块，就可以创建虚拟环境，也能添加uv.lock
@@ -35,9 +44,6 @@ uv pip freeze > requirements.txt
 安装配置
 uv sync
 
-"""
-
-"""
 添加远程仓库地址，命名为 origin
     git remote add origin git@github-personal:tomdingjf/uv_test.git
 将本地仓库与 GitHub 上的 uv_test 仓库关联
@@ -48,5 +54,17 @@ uv sync
     git push -u origin main
     -u 参数会建立本地分支与远程分支的跟踪关系，以后只需 git push 即可
 
+
+# 安装最新版本
+uv python install
+
+# 安装特定大版本
+uv python install 3.12
+
+# 安装精确版本
+uv python install 3.12.3
+
+# 同时安装多个版本
+uv python install 3.10 3.11 3.12
 """
 
